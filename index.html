@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>dynamic cards</title>
+</head>
+    <style>
+        .card{
+            border: 2px dashed rgb(100, 81, 81);
+            border-color:rgb(117, 117, 183);
+            background-color:rgb(224, 24, 174);
+            margin: 10px 20px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 30px;
+            box-shadow: 4px 4px 3px rgb(1, 17, 0);
+        }
+    </style>
+    <body style="background-color: rgb(28, 230, 213);">
+        <h1 style="background-color: rgb(228, 129, 47); text-align: center;">DYNAMIC CARDS</h1>
+        <div id="siraj"></div>
+    <script>
+        const arr=["sana","Sadiya","Saniya","Karishma","Raj","Rushali","Kiran",'Aishu'];
+        const students=document.getElementById("siraj");
+        for(let i=0;i<arr.length;i++){
+            students.innerHTML+=`<div class='card'>${arr[i].toUpperCase()}</div>`;
+        }
+    </script>
+  </body>
+</html>
